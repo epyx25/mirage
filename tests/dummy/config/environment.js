@@ -2,6 +2,15 @@
 
 module.exports = function(environment) {
   var ENV = {
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self'",
+      'font-src': "'self'",
+      'connect-src': "'none'",
+      'img-src': "'self' data:",
+      'style-src': "'self' 'unsafe-inline'",
+      'media-src': "'self'"
+    },    
     modulePrefix: 'dummy',
     environment: environment,
     baseURL: '/',
